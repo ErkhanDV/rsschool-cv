@@ -7,6 +7,18 @@
 * [My GitHub page](https://github.com/ErkhanDV) 
 ## *About me:*
 I want to change my profession.
+## *Code-example:*
+```
+  addPlayerCard () {
+    let card = this.deck.getCard();
+    this.player.add(card);
+    $('#playerResult').empty();
+    $('#playerResult').append(this.player.value);
+    if (this.player.value >= 21) {
+      this.end();
+    }
+  }
+```
 ## *Education:*
 Ural State University (Yekaterinburg, Russia)
 ## *Work experience:*
