@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 h1, a {
@@ -32,47 +33,135 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 40px 80px;
 }
 
 .header {
   width: 100%;
+  background-color: #e7e7e7;
 }
 
 .header > .container {
-  padding: 80px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .logo-name {
-  text-align: center;
+  width: 33%;
   font-family: "Georgia";
+  font-weight: 400;
   font-size: 50px;
   color: #292929;
 }
 
 .photo-img {
-  max-width: 230px;
-  max-height: 230px;
-  border-radius: 115px;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 100px;
+}
+
+.nav {
+  width: 33%;
 }
 
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-item {
+  font-family: "Arial";
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #292929;
+  position: relative;
+}
+
+.nav-item:before {
+  position: absolute;
+  bottom: -5px;
+  content: " ";
+  border-bottom: 2px solid #292929;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.nav-item:hover:before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.main {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.main > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+h2 {
+  margin: 20px auto;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 26px;
+  text-align: center;
+  color: #292929;
+}
+
+.main-section {
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  width: 280px;
+  height: 180px;
+}
+
+p {
+  font-family: "Arial";
+  margin: 10px 10px;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
