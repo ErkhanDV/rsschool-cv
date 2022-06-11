@@ -103,7 +103,7 @@ body {
 .nav-item {
   font-family: "Roboto";
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.1em;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -168,18 +168,32 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   background-color: #e7e7e7;
   border-radius: 10px;
   width: 280px;
   height: 180px;
 }
 
+.education-list, .skills-list, .pets-list, .language-list {
+  font-family: 'Roboto';
+  font-weight: normal;
+  color: #292929;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.education-item, .skills-item, .pets-item, .language-item {
+  padding: 5px 20px;
+}
+
 p {
-  font-family: "Roboto";
-  font-style: italic;
+  font-family: 'Roboto';
+  font-weight: normal;
+  color: #292929;
   font-size: 16px;
   margin: 5px 10px;
   line-height: 1.3em;
@@ -187,35 +201,39 @@ p {
   text-align: center;
 }
 
+.language-link, .pets-link {
+  font-weight: 600;
+  font-style: italic;
+}
+
 .code {
   font-size: 16px;
   text-align: left;
+  padding-left: 20px;
 }
 
 .contact-link {
-  font-family: "Georgia";
+  font-family: "Roboto";
+  font-style: italic;
   font-size: 16px;
+  font-weight: 600;
+  color: #292929;
+  letter-spacing: 0.1em;
   margin: 5px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 
 .contact-icon {
   width: 30px;
   height: 30px;
-}
-
-.contact-link:hover, .footer-link:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .footer > .container {
@@ -233,10 +251,17 @@ p {
 
 .footer-p {
   font-family: "Georgia";
+  color: #292929;
   font-size: 20px;
 }
 
 .footer-link {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  font-style: italic;
+  color: #292929;
+  letter-spacing: 0.1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,5 +269,18 @@ p {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+}
+
+.contact-link:hover, .footer-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.language-link:hover, .pets-link:hover {
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

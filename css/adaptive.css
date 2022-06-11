@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 20px 40px;
+  }
+  .header > .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo-name {
+    width: auto;
+    text-align: center;
+  }
+  .photo-img {
+    margin: 20px 0px;
+  }
+  .nav-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-link {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 368px) {
+  .container {
+    max-width: 368px;
+    padding: 20px 10px;
+  }
+  .footer > .container {
+    padding: 0 10px;
+  }
+}
+/*# sourceMappingURL=adaptive.css.map */

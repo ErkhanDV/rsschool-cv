@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 20px 40px;
+  }
+  .header > .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-name {
+    width: auto;
+    text-align: center;
+  }
+  .photo-img {
+    margin: 20px 0px;
+  }
+  .nav-list {
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-link {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 368px) {
+  .container {
+    max-width: 368px;
+    padding: 20px 10px;
+  }
+  .footer > .container {
+    padding: 0 10px;
+  }
+}

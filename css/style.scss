@@ -64,7 +64,7 @@ body {
 .nav-item {
   font-family: "Roboto";
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.1em;
   align-self: flex-end;
   color:#292929;
@@ -105,40 +105,58 @@ h2 {
 .main-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   background-color:  #e7e7e7;
   border-radius: 10px;
   width: 280px;
   height: 180px;
 }
+.education-list, .skills-list, .pets-list, .language-list {
+  font-family: 'Roboto';
+  font-weight: normal;
+  color: #292929;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.education-item, .skills-item, .pets-item, .language-item {
+  padding: 5px 20px;
+}
 p {
-  font-family: "Roboto";
-  font-style: italic;
+  font-family: 'Roboto';
+  font-weight: normal;
+  color: #292929;
   font-size: 16px;
   margin: 5px 10px;
   line-height: 1.3em;
   letter-spacing: 0.1em;
   text-align: center;
  }
+ .language-link, .pets-link {
+  font-weight: 600;
+  font-style: italic;
+ }
 .code {
   font-size: 16px;
   text-align: left;
+  padding-left: 20px;
 }
 .contact-link {
-  font-family: "Georgia";
+  font-family: "Roboto";
+  font-style: italic;
   font-size: 16px;
+  font-weight: 600;
+  color: #292929;
+  letter-spacing: 0.1em;
   margin: 5px 20px;
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   gap: 10px;
 }
 .contact-icon {
   width: 30px;
   height: 30px;
-}
-.contact-link:hover, .footer-link:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s
 }
 .footer > .container {
   padding: 0 80px;
@@ -148,10 +166,24 @@ p {
 }
 .footer-p {
   font-family: "Georgia";
+  color: #292929;
   font-size: 20px;
 }
 .footer-link {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  font-style: italic;
+  color: #292929;
+  letter-spacing: 0.1em;
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.contact-link:hover, .footer-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s
+}
+.language-link:hover, .pets-link:hover {
+  color: #000000;
 }
