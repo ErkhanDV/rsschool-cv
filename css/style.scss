@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth; 
+}
 h1, a {
   text-decoration: none;
   color: inherit;
@@ -21,9 +24,9 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 40px 80px;
+  padding: 20px 80px;
 }
-.header {
+.header, .footer {
   width: 100%;
   background-color: #e7e7e7;
 }
@@ -38,12 +41,14 @@ body {
   font-family: "Georgia";
   font-weight: 400;
   font-size: 50px;
+  letter-spacing: 0.1em;
   color: #292929;
 }
 .photo-img {
   max-width: 200px;
   max-height: 200px;
   border-radius: 100px;
+  align-self: center;
 }
 .nav {
   width: 33%;
@@ -57,8 +62,9 @@ body {
   gap: 10px;
 }
 .nav-item {
-  font-family: "Arial";
-  font-size: 16px;
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 18px;
   letter-spacing: 0.1em;
   align-self: flex-end;
   color:#292929;
@@ -88,23 +94,64 @@ body {
   gap: 40px;
 }
 h2 {
-  margin: 20px auto;
+  margin: 15px auto;
   font-family: "Georgia";
   font-weight: 400;
   font-size: 26px;
   text-align: center;
   color:#292929;
+  letter-spacing: 0.1em;
 }
 .main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color:  #e7e7e7;
   border-radius: 10px;
   width: 280px;
   height: 180px;
 }
 p {
-  font-family: "Arial";
-  margin: 10px 10px;
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 16px;
+  margin: 5px 10px;
   line-height: 1.3em;
   letter-spacing: 0.1em;
   text-align: center;
  }
+.code {
+  font-size: 16px;
+  text-align: left;
+}
+.contact-link {
+  font-family: "Georgia";
+  font-size: 16px;
+  margin: 5px 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.contact-icon {
+  width: 30px;
+  height: 30px;
+}
+.contact-link:hover, .footer-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s
+}
+.footer > .container {
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-p {
+  font-family: "Georgia";
+  font-size: 20px;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

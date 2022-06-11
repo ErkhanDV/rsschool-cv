@@ -15,49 +15,79 @@
       <img src="./assets/img/photo.jpg" alt="Denis Erkhan photo" class="photo-img">
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="" class="nav-link">About me</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Education</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Work experience</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Code example</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Language</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#work" class="nav-link">Work experience</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Pet projects</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Language</a></li>
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="main">
     <div class="container">
-      <section class="main-section">
+      <section class="main-section" id="about">
         <h2 class="main-h">About me</h2>
         <p>Hi there! I'm from Yekaterinurg. Like read books, extreme sports as the climbing, pitbike rides and skiing.</p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="education">
         <h2 class="main-h">Education</h2>
-        <p>Ural State University 2008 - 2012 at Faculty of Physics.</p>
+        <ul class="education-list">
+          <li class="education-item">Ural State University (2008 - 2012)</li>
+          <li class="education-item">RSSchool</li>
+        </ul>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="work">
         <h2 class="main-h">Work experience</h2>
         <p>Now I'm working in the installation and maintenance of low-voltage systems and have not yet experience at IT.</p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="skills">
+        <h2 class="main-h">Skills</h2>
+        <ul class="skills-list">
+          <li class="skills-item">HTML5, CSS3, JS basics</li>
+          <li class="skills-item">Github</li>
+          <li class="skills-item">Figma</li>
+        </ul>
+      </section>
+      <section class="main-section" id="projects">
+        <h2 class="main-h">Pet projects</h2>
+        <ul class="pets-list">
+          <li class="pets-item"><a href="" class="pets-link">Delta print</a></li>
+          <li class="pets-item"><a href="" class="pets-link">Black Jack</a></li>
+        </ul>
+      </section>
+      <section class="main-section" id="code">
         <h2 class="main-h">Code example</h2>
-        <p><code>sort(a, b) {<br>
-          &nbspa - b;<br>
-        }
-      </code></p>
+        <code class="code">
+          function sum(arr) {<br>
+          &nbsp;arr.reduce(total, arg =><br>
+          &nbsp;total + arg, 0);<br>
+          }
+        </code>
       </section>
-      <section class="main-section">
-        <h2 class="main-h">Language</h2>
+      <section class="main-section" id="languages">
+        <h2 class="main-h">Languages</h2>
         <p>English level by <a class="nav-item" href="https://www.efset.org/ru/">[EFset]</a>: A2.</p>
+        <p>Russian: native.</p>
       </section>
-      <section class="main-section">
+      <section class="main-section" id="contacts">
         <h2 class="main-h">Contacts</h2>
-        
+        <ul class="contact-list">
+          <li class="contact-item"><a href="https://t.me/ErkhanDV" class="contact-link" target="_blank"><img src="./assets/icons/telegram-me.svg" alt="telegram icon" class="contact-icon">t.me</a></li>
+          <li class="contact-item"><a href="mailto:erhan.denis@list.ru" class="contact-link"><img src="./assets/icons/mail-me.svg" alt="mailbox icon" class="contact-icon">send me a postcard</a></li>
+          <li class="contact-item"><a href="tel:+7999771202" class="contact-link"><img src="./assets/icons/call-me.svg" alt="phone icon" class="contact-icon">+7 999 77 12 02</a></li>
+        </ul>
       </section>
     </div>
   </main>
   <footer class="footer">
     <div class="container">
+      <a href="https://github.com/ErkhanDV" class="footer-link" target="_blank"><img src="./assets/icons/github-icon.svg" alt="github icon" class="footer-icon">Visit me</a>
+      <p class="footer-p">&copy;2022</p>
+      <a href="https://rs.school/js/" class="footer-link" target="_blank"><img src="./assets/icons/rs_school-icon.svg" alt="RSSchool icon" class="footer-icon"></a>
     </div>
   </footer>
 </body>
