@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth; 
+}
+h1, a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 80px;
+}
+.header, .footer {
+  width: 100%;
+  background-color: #e7e7e7;
+}
+.header > .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.logo-name {
+  width: 33%;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  color: #292929;
+}
+.photo-img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 100px;
+  align-self: center;
+}
+.nav {
+  width: 33%;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.nav-item {
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  align-self: flex-end;
+  color:#292929;
+  position: relative;
+}
+.nav-item:before{
+  position:absolute;
+  bottom: -5px;
+  content: " ";
+  border-bottom: 2px solid #292929;
+  transform: scale(0,1);
+  width:100%;
+  transition: transform 0.3s
+}
+.nav-item:hover:before{
+  transform: scale(1,1);
+}
+.main {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.main > .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+h2 {
+  margin: 15px auto;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 26px;
+  text-align: center;
+  color:#292929;
+  letter-spacing: 0.1em;
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color:  #e7e7e7;
+  border-radius: 10px;
+  width: 280px;
+  height: 180px;
+}
+.education-list, .skills-list, .pets-list, .language-list {
+  font-family: 'Roboto';
+  font-weight: normal;
+  color: #292929;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.education-item, .skills-item, .pets-item, .language-item {
+  padding: 5px 20px;
+}
+p {
+  font-family: 'Roboto';
+  font-weight: normal;
+  color: #292929;
+  font-size: 16px;
+  margin: 5px 10px;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+  text-align: center;
+ }
+ .language-link, .pets-link {
+  font-weight: 600;
+  font-style: italic;
+ }
+.code {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 20px;
+}
+.contact-link {
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 600;
+  color: #292929;
+  letter-spacing: 0.1em;
+  margin: 5px 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+}
+.contact-icon {
+  width: 30px;
+  height: 30px;
+}
+.footer > .container {
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-p {
+  font-family: "Georgia";
+  color: #292929;
+  font-size: 20px;
+}
+.footer-link {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  font-style: italic;
+  color: #292929;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-link:hover, .footer-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s
+}
+.language-link:hover, .pets-link:hover {
+  color: #000000;
+}
