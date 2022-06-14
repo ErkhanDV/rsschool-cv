@@ -4,7 +4,8 @@
   padding: 0;
 }
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+  background-color: #f5f5f5;
 }
 h1, a {
   text-decoration: none;
@@ -13,14 +14,29 @@ h1, a {
 ul {
   list-style: none;
 }
-
+.georgia-font {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.3em;
+  color: #292929;
+}
+.roboto-font, p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.3em;
+  color: #292929;
+}
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -38,11 +54,11 @@ body {
 }
 .logo-name {
   width: 33%;
-  font-family: "Georgia";
-  font-weight: 400;
+  line-height: 1.2em;
   font-size: 50px;
-  letter-spacing: 0.1em;
-  color: #292929;
+}
+.laptop-h1 {
+  display: none;
 }
 .photo-img {
   max-width: 200px;
@@ -62,19 +78,17 @@ body {
   gap: 10px;
 }
 .nav-item {
-  font-family: "Roboto";
+  line-height: 1em;
   font-style: italic;
   font-size: 16px;
-  letter-spacing: 0.1em;
   align-self: flex-end;
-  color:#292929;
   position: relative;
 }
 .nav-item:before{
   position:absolute;
   bottom: -5px;
   content: " ";
-  border-bottom: 2px solid #292929;
+  border-bottom: 2px solid #686868;
   transform: scale(0,1);
   width:100%;
   transition: transform 0.3s
@@ -82,25 +96,24 @@ body {
 .nav-item:hover:before{
   transform: scale(1,1);
 }
+.nav-item:hover {
+  transform: translateX(-10px);
+  transition: transform 0.3s;
+}
 .main {
   width: 100%;
-  background-color: #f5f5f5;
+  display: flex;
 }
 .main > .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
-h2 {
+.main-h {
   margin: 15px auto;
-  font-family: "Georgia";
-  font-weight: 400;
   font-size: 26px;
-  text-align: center;
-  color:#292929;
-  letter-spacing: 0.1em;
 }
 .main-section {
   display: flex;
@@ -112,24 +125,14 @@ h2 {
   height: 180px;
 }
 .education-list, .skills-list, .pets-list, .language-list {
-  font-family: 'Roboto';
-  font-weight: normal;
-  color: #292929;
-  line-height: 1.3em;
-  letter-spacing: 0.1em;
   text-align: left;
 }
 .education-item, .skills-item, .pets-item, .language-item {
   padding: 5px 20px;
 }
 p {
-  font-family: 'Roboto';
-  font-weight: normal;
-  color: #292929;
   font-size: 16px;
   margin: 5px 10px;
-  line-height: 1.3em;
-  letter-spacing: 0.1em;
   text-align: center;
  }
  .language-link, .pets-link {
@@ -142,12 +145,9 @@ p {
   padding-left: 20px;
 }
 .contact-link {
-  font-family: "Roboto";
   font-style: italic;
   font-size: 16px;
   font-weight: 600;
-  color: #292929;
-  letter-spacing: 0.1em;
   margin: 5px 20px;
   display: flex;
   flex-wrap: nowrap;
@@ -165,23 +165,23 @@ p {
   justify-content: space-between;
 }
 .footer-p {
-  font-family: "Georgia";
-  color: #292929;
+  align-self: center;
   font-size: 20px;
 }
 .footer-link {
-  font-family: "Roboto";
   font-weight: 600;
   font-size: 16px;
   font-style: italic;
-  color: #292929;
-  letter-spacing: 0.1em;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.contact-link:hover, .footer-link:hover {
+.contact-link:hover {
   transform: scale(1.1);
+  transition: transform 0.2s
+}
+.footer-link:hover {  
+  transform: translateY(-5px);
   transition: transform 0.2s
 }
 .language-link:hover, .pets-link:hover {
