@@ -1,7 +1,7 @@
 # **Erkhan Denis**
 ![Erkhan Denis](https://avatars.githubusercontent.com/u/74126026?v=4)
 ## *My contacts:*
-* Phone: +7 982 665 34 73
+* Phone: +7-982-665-34-73
 * e-mail: erhan.denis@list.ru
 * Telegram: @ErkhanDV
 * [My GitHub page](https://github.com/ErkhanDV) 
@@ -14,7 +14,7 @@ I want to change my profession.
     this.player.add(card);
     $('#playerResult').empty();
     $('#playerResult').append(this.player.value);
-    if (this.player.value >= 21) {
+    if (this.player.value != 21) {
       this.end();
     }
   }
